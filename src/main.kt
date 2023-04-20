@@ -2,5 +2,5 @@ package src
 
 fun main() {
 
-    testaAutenticacao()
+    testaContasDiferentes()
 }

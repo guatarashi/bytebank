@@ -3,7 +3,7 @@ package src
 class ContaCorrente(
     titular: String,
     numero: Int
-) : Conta(
+) : ContaTransferivel(
     titular = titular,
     numero = numero
 ) {

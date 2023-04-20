@@ -1,9 +1,9 @@
 package src
 
-class ContaPoupanca(
+class ContaSalario(
     titular: String,
     numero: Int
-) : ContaTransferivel(
+) : Conta(
     titular = titular,
     numero = numero
 ){
