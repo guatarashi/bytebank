@@ -1,9 +1,9 @@
-package src
+package src.br.com.alura.bytebank.modelo
 
-class ContaSalario(
+class ContaPoupanca(
     titular: String,
     numero: Int
-) : Conta(
+) : ContaTransferivel(
     titular = titular,
     numero = numero
 ){

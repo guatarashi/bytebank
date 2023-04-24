@@ -1,4 +1,5 @@
-package src
+package src.br.com.alura.bytebank.modelo
+
 class Auxiliar(
     nome: String,
     cpf: String,

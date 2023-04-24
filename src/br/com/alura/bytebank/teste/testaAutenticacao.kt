@@ -1,4 +1,9 @@
-package src
+package src.br.com.alura.bytebank.teste
+
+import src.br.com.alura.bytebank.modelo.Cliente
+import src.br.com.alura.bytebank.modelo.Diretor
+import src.br.com.alura.bytebank.modelo.Gerente
+import src.br.com.alura.bytebank.modelo.SistemaInterno
 
 fun testaAutenticacao() {
 

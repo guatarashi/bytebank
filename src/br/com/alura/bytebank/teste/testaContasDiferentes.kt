@@ -1,4 +1,8 @@
-package src
+package src.br.com.alura.bytebank.teste
+
+import src.br.com.alura.bytebank.modelo.ContaCorrente
+import src.br.com.alura.bytebank.modelo.ContaPoupanca
+import src.br.com.alura.bytebank.modelo.ContaSalario
 
 fun testaContasDiferentes() {
     val contaCorrente = ContaCorrente(

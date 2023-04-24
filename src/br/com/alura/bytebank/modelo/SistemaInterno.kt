@@ -1,4 +1,4 @@
-package src
+package src.br.com.alura.bytebank.modelo
 
 class SistemaInterno() {
 
