@@ -1,7 +1,7 @@
 package src.br.com.alura.bytebank.modelo
 
 class ContaCorrente(
-    titular: String,
+    titular: Cliente,
     numero: Int
 ) : ContaTransferivel(
     titular = titular,
