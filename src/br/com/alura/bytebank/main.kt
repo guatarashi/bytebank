@@ -1,18 +1,23 @@
 package src.br.com.alura.bytebank
 
+import java.lang.ClassCastException
 import src.br.com.alura.bytebank.modelo.Endereco
 
 fun main() {
 
     println("inicio main")
-    10/0
     funcao1()
     println("fim main")
 }
 
 fun funcao1() {
     println("inicio funcao1")
-    funcao2()
+    try {
+        funcao2()
+    } catch (e: ClassCastException) {
+        e.printStackTrace()
+        println("ClassCastException foi pegada")
+    }
     println("fim funcao1")
 }
 
