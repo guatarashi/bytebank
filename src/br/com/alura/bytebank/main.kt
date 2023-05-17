@@ -1,13 +1,11 @@
 package src.br.com.alura.bytebank
 
-import java.lang.ArithmeticException
-import java.lang.ClassCastException
-import src.br.com.alura.bytebank.modelo.Endereco
+import src.br.com.alura.bytebank.teste.testaComportamentosConta
 
 fun main() {
 
     println("inicio main")
-    funcao1()
+    testaComportamentosConta()
     println("fim main")
 }
 
