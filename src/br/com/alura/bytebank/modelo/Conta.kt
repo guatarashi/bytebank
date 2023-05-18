@@ -1,9 +1,10 @@
 package src.br.com.alura.bytebank.modelo
 
 abstract class Conta(
-    var titular: Cliente,
+    val titular: Cliente, // a propriedade deve ser alterada para val por te usado o padrão delegation
     val numero: Int
-): Autenticavel {
+//): Autenticavel {
+): Autenticavel by titular { // padrão delegation - usando esse padrão não é necessário sobreescrever o método
     var saldo = 0.0
         protected set
     companion object {
@@ -42,9 +43,9 @@ class ContaCorrente(
         }
     }
 
-    override fun autentica(senha: Int): Boolean {
-        return titular.autentica(senha)
-    }
+//    override fun autentica(senha: Int): Boolean {
+//        return titular.autentica(senha)
+//    }
 }
 
 class ContaPoupanca(
@@ -61,7 +62,7 @@ class ContaPoupanca(
         }
     }
 
-    override fun autentica(senha: Int): Boolean {
-        return titular.autentica(senha)
-    }
+//    override fun autentica(senha: Int): Boolean {
+//        return titular.autentica(senha)
+//    }
 }

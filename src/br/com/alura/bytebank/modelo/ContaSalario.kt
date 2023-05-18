@@ -13,7 +13,7 @@ class ContaSalario(
         }
     }
 
-    override fun autentica(senha: Int): Boolean {
-        return titular.autentica(senha)
-    }
+//    override fun autentica(senha: Int): Boolean {
+//        return titular.autentica(senha)
+//    }
 }
