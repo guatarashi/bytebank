@@ -3,7 +3,7 @@ package src.br.com.alura.bytebank.modelo
 abstract class Conta(
     var titular: Cliente,
     val numero: Int
-) {
+): Autenticavel {
     var saldo = 0.0
         protected set
     companion object {
@@ -15,6 +15,8 @@ abstract class Conta(
         println("Criando conta")
         total++
     }
+
+
 
     fun deposita(valor: Double) {
         if (valor > 0) {
@@ -39,6 +41,10 @@ class ContaCorrente(
             this.saldo -= valorComTaxa
         }
     }
+
+    override fun autentica(senha: Int): Boolean {
+        return titular.autentica(senha)
+    }
 }
 
 class ContaPoupanca(
@@ -53,5 +59,9 @@ class ContaPoupanca(
         if (this.saldo >= valor) {
             this.saldo -= valor
         }
+    }
+
+    override fun autentica(senha: Int): Boolean {
+        return titular.autentica(senha)
     }
 }

@@ -52,22 +52,22 @@ fun testaContasDiferentes() {
     println("saldo após saque corrente: ${contaCorrente.saldo}")
     println("saldo após saque poupança: ${contaPoupanca.saldo}")
 
-    contaCorrente.transfere(100.0, contaPoupanca)
+    contaCorrente.transfere(100.0, contaPoupanca, 1)
 
     println("saldo corrente após transferir para poupança: ${contaCorrente.saldo}")
     println("saldo poupança após receber transferência: ${contaPoupanca.saldo}")
 
-    contaPoupanca.transfere(200.0, contaCorrente)
+    contaPoupanca.transfere(200.0, contaCorrente, 1)
 
     println("saldo poupança após transferir para corrente: ${contaPoupanca.saldo}")
     println("saldo corrente após receber transferência: ${contaCorrente.saldo}")
 
-    contaCorrente.transfere(100.0, contaSalario)
+    contaCorrente.transfere(100.0, contaSalario, 1)
 
     println("saldo corrente após transferir para salário: ${contaCorrente.saldo}")
     println("saldo salário após receber transferência: ${contaSalario.saldo}")
 
-    contaPoupanca.transfere(200.0, contaSalario)
+    contaPoupanca.transfere(200.0, contaSalario, 2)
 
     println("saldo poupança após transferir para salário: ${contaPoupanca.saldo}")
     println("saldo salário após receber transferência: ${contaSalario.saldo}")
